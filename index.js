@@ -73,7 +73,10 @@ app.get('/', (req, res) => {
 
 app.get('/hello', (req, res) => {
     res.send('hello updated here')
-})
+});
+app.get('/gello', (req, res) => {
+    res.send('gello updated here')
+});
 
 app.listen(port, () =>{
     console.log('Running Genius Server on port', port);
@@ -95,6 +98,7 @@ Every project
 6. heroku login
 7. heroku create (only one time for a project)
 8. command: git push heroku main
+9. heroku > app > settings > add Var (add DB_USER, DB_PASS)
 
 
 ------
